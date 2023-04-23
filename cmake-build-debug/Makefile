@@ -150,6 +150,33 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/TinkedCad_CourseWork.dir/build.make CMakeFiles/TinkedCad_CourseWork.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+newStringParsing.o: newStringParsing.cpp.o
+
+.PHONY : newStringParsing.o
+
+# target to build an object file
+newStringParsing.cpp.o:
+	$(MAKE) -f CMakeFiles/TinkedCad_CourseWork.dir/build.make CMakeFiles/TinkedCad_CourseWork.dir/newStringParsing.cpp.o
+.PHONY : newStringParsing.cpp.o
+
+newStringParsing.i: newStringParsing.cpp.i
+
+.PHONY : newStringParsing.i
+
+# target to preprocess a source file
+newStringParsing.cpp.i:
+	$(MAKE) -f CMakeFiles/TinkedCad_CourseWork.dir/build.make CMakeFiles/TinkedCad_CourseWork.dir/newStringParsing.cpp.i
+.PHONY : newStringParsing.cpp.i
+
+newStringParsing.s: newStringParsing.cpp.s
+
+.PHONY : newStringParsing.s
+
+# target to generate assembly for a file
+newStringParsing.cpp.s:
+	$(MAKE) -f CMakeFiles/TinkedCad_CourseWork.dir/build.make CMakeFiles/TinkedCad_CourseWork.dir/newStringParsing.cpp.s
+.PHONY : newStringParsing.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -162,6 +189,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... newStringParsing.o"
+	@echo "... newStringParsing.i"
+	@echo "... newStringParsing.s"
 .PHONY : help
 
 

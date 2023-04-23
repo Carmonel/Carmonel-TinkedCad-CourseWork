@@ -14,11 +14,7 @@ public:
     void clear();
     void backlight();
     void setCursor(short a, short b);
-};
-
-class Serial{
-public:
-    void print(string str);
+    void print(int value);
 };
 
 class String{
@@ -28,6 +24,7 @@ private:
 public:
     std::string returnString();
     short length();
+    long toInt();
     char charAt(short index);
     String substring(String str, short start, short end);
     bool operator=(String cmp){
@@ -35,5 +32,14 @@ public:
     }
 };
 
+class Serial{
+public:
+    void begin();
+    void println(string str);
+    int available();
+    void print(string str);
+    void print(String str);
+    void print(int value);
+};
 
 #endif //TINKERCAD_COURSEWORK_NEWSTRINGPARSING_H

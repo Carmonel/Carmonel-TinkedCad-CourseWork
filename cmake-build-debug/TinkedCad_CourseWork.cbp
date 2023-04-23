@@ -83,6 +83,12 @@
 		<Unit filename="/cygdrive/c/Users/Ярослав/CLionProjects/TinkedCad-CourseWork/main.cpp">
 			<Option target="TinkedCad_CourseWork"/>
 		</Unit>
+		<Unit filename="/cygdrive/c/Users/Ярослав/CLionProjects/TinkedCad-CourseWork/newStringParsing.cpp">
+			<Option target="TinkedCad_CourseWork"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/Ярослав/CLionProjects/TinkedCad-CourseWork/newStringParsing.h">
+			<Option target="TinkedCad_CourseWork"/>
+		</Unit>
 		<Unit filename="/cygdrive/c/Users/Ярослав/CLionProjects/TinkedCad-CourseWork/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>

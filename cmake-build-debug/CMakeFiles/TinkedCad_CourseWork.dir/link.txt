@@ -1,1 +1,1 @@
-/usr/bin/c++.exe -g  -Wl,--enable-auto-import CMakeFiles/TinkedCad_CourseWork.dir/main.cpp.o  -o TinkedCad_CourseWork.exe -Wl,--out-implib,libTinkedCad_CourseWork.dll.a -Wl,--major-image-version,0,--minor-image-version,0 
+/usr/bin/c++.exe -g  -Wl,--enable-auto-import CMakeFiles/TinkedCad_CourseWork.dir/main.cpp.o CMakeFiles/TinkedCad_CourseWork.dir/newStringParsing.cpp.o  -o TinkedCad_CourseWork.exe -Wl,--out-implib,libTinkedCad_CourseWork.dll.a -Wl,--major-image-version,0,--minor-image-version,0 

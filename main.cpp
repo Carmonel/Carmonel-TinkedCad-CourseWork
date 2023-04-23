@@ -2,6 +2,8 @@
 //#include <LiquidCrystal_I2C.h>
 //LiquidCrystal_I2C lcd(32, 16, 2);
 String input;
+Serial Serial;
+lcd lcd;
 
 bool isNumber(char ch){
     return ((ch >= '0') && (ch <= '9'));

@@ -5,6 +5,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "/cygdrive/c/Users/Ярослав/CLionProjects/TinkedCad-CourseWork/main.cpp" "/cygdrive/c/Users/Ярослав/CLionProjects/TinkedCad-CourseWork/cmake-build-debug/CMakeFiles/TinkedCad_CourseWork.dir/main.cpp.o"
+  "/cygdrive/c/Users/Ярослав/CLionProjects/TinkedCad-CourseWork/newStringParsing.cpp" "/cygdrive/c/Users/Ярослав/CLionProjects/TinkedCad-CourseWork/cmake-build-debug/CMakeFiles/TinkedCad_CourseWork.dir/newStringParsing.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
