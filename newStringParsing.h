@@ -1,7 +1,3 @@
-//
-// Created by Ярослав on 22.04.2023.
-//
-
 #ifndef TINKERCAD_COURSEWORK_NEWSTRINGPARSING_H
 #define TINKERCAD_COURSEWORK_NEWSTRINGPARSING_H
 #include "string"
@@ -50,4 +46,4 @@ public:
     void print(long value);
 };
 
-#endif //TINKERCAD_COURSEWORK_NEWSTRINGPARSING_H
+#endif
