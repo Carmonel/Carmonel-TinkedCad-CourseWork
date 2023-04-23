@@ -26,13 +26,13 @@ private:
     short start, end;
     bool negative;
 public:
-    Num(int start){
+    Num(short start){
         this->start = start;
         Serial.print("\nStart = ");
         Serial.print(start);
     }
-    void setEnd(int end){
-        this->end = end;
+    void setEnd(short endInput){
+        this->end = endInput;
         Serial.print("\nEnd = ");
         Serial.print(end);
     }
@@ -48,7 +48,7 @@ public:
         Serial.print(value);
         return true;
     }
-    long returnValue(){
+    long returnValue() const{
         return value;
     }
 };
@@ -60,13 +60,13 @@ private:
     String str;
     short start, end;
 public:
-    Operator(int start){
+    Operator(short start){
         this->start = start;
         Serial.print("\nStart = ");
         Serial.print(start);
     }
-    void setEnd(int end){
-        this->end = end;
+    void setEnd(short endInput){
+        this->end = endInput;
         Serial.print("\nEnd = ");
         Serial.print(end);
     }
@@ -122,7 +122,7 @@ public:
         }
         return false;
     }
-    short returnOpValue(){
+    short returnOpValue() const{
         return value;
     }
 };
@@ -132,7 +132,7 @@ long nod(long num1, long num2){
     // если числа равны, НОД найден
     if (num1 == num2) return num1;
     // Находим разность чисел
-    int d = num1 - num2;
+    int d = (int)(num1 - num2);
     // Если разность отрицательная,
     if (num1 - num2 < 0)
     {
@@ -182,8 +182,6 @@ void loop(){
         num1.setEnd(i);
         // Формирование первого числа
         if (!num1.makeValue()) goto exit;
-
-
 
 
         //// Работа над оператором

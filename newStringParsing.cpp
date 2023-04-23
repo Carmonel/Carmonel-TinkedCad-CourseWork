@@ -8,8 +8,11 @@ char String::charAt(short index){
 short String::length(){
     return string.length();
 }
-String String::substring(String str, short start, short end){
-
+String String::substring(short start, short end){
+    String result;
+    std::string str(this->returnString(), start, this->length()-end);
+    result.setString(str);
+    return result;
 }
 std::string String::returnString(){
     return string;
@@ -18,19 +21,24 @@ long String::toInt() {
     return stol(string);
 }
 
-void Serial::print(string str){
+void String::setString(std::string str) {
+    void setString(std::string str){
+        string = str;
+    }
+}
+
+char String::charAt(int index) {
+    return string[index];
+}
+
+void Serial::print(std::string str){
     cout << str;
 }
-
-void Serial::print(int value) {
-    cout << value;
-}
-
-void Serial::print(String str) {
+void Serial::print(String str){
     cout << str.returnString();
 }
 
-void Serial::begin() {
+void Serial::begin(int value) {
     cout << "Serial::begin();" << endl;
 }
 
@@ -41,6 +49,25 @@ int Serial::available() {
 
 void Serial::println(string str) {
     cout << "\n" << str;
+}
+
+void Serial::println() {
+    cout << endl;
+}
+
+String Serial::readString() {
+    std::string tmp;
+    cin >> tmp;
+    String result;
+    result.setString(tmp);
+    return result;
+}
+
+void Serial::print(int value) {
+    cout << value;
+}
+void Serial::print(long value) {
+    cout << value;
 }
 
 void parseInt(string input){
@@ -63,6 +90,6 @@ void lcd::init() {
     cout << "lcd::init();" << endl;
 }
 
-void lcd::print(int value) {
+void lcd::print(long value) {
     cout << "lcd::print(); -> " << value;
 }
